@@ -1,0 +1,5 @@
+id kakitangan = 163 = change tarikh_mula_kerja = 2014-01-20
+				49 = "" = 2013-01-20
+				21 = "" = 2013-03-20
+
+add column in maklumat_cuti = tarikh_mula n tarikh akhir
