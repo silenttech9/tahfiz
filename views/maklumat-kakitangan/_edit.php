@@ -45,8 +45,7 @@ $tanggagaji = ArrayHelper::map(LookupTanggaGaji::find()->orderBy(['id'=>SORT_ASC
                 <div class="profile-usermenu">
                     <ul class="nav">
                         <li>
-                            <a href="#">
-                                <i class="icon-home"></i> Overview </a>
+                            <?= Html::a('<i class="icon-home"></i>Overview', ['view','id'=>$model->id_staf], ['class' => '']) ?>
                         </li>
                         <li class="active">
                             <?= Html::a('<i class="icon-pencil"></i>Kemaskini Maklumat', ['update','id'=>$model->id_staf], ['class' => '']) ?>
