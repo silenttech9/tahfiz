@@ -113,7 +113,7 @@ class MaklumatKakitanganController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id_staf]);
         } else {
-            return $this->render('update', [
+            return $this->render('_edit', [
                 'model' => $model,
             ]);
         }

@@ -33,7 +33,7 @@ class AppAsset extends AssetBundle
             'theme/assets/global/plugins/morris/morris.css',
             'theme/assets/global/plugins/fullcalendar/fullcalendar.min.css',
             'theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css',
-
+            'theme/assets/pages/css/profile.min.css',
             // "theme/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css",
             'theme/assets/global/plugins/bootstrap-table/bootstrap-table.min.css',
             'theme/assets/pages/css/search.min.css',
@@ -82,9 +82,12 @@ class AppAsset extends AssetBundle
             'theme/assets/global/plugins/morris/raphael-min.js',
             'theme/assets/global/plugins/counterup/jquery.waypoints.min.js',
             'theme/assets/global/plugins/counterup/jquery.counterup.min.js',
+            'theme/assets/global/plugins/jquery.sparkline.min.js',
+
             'theme/assets/global/scripts/app.min.js',
             "theme/assets/pages/scripts/search.min.js",
             "theme/assets/pages/scripts/form-wizard.js",
+            'theme/assets/pages/scripts/profile.min.js',
 
             "theme/assets/pages/scripts/components-bootstrap-select.min.js",
             'theme/assets/pages/scripts/dashboard.min.js',
