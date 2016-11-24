@@ -377,7 +377,49 @@ $tanggagaji = ArrayHelper::map(LookupTanggaGaji::find()->orderBy(['id'=>SORT_ASC
                                     <?php ActiveForm::end(); ?>
                                 </div>
                                 <div class="tab-pane" id="tab_1_3">
-                                    
+                                    <?php $form = ActiveForm::begin(
+                                        [
+                                            'action' => ['updateimg','id'=>$model->id_staf],
+                                            'method' => 'post',
+                                            'options' => [
+                                                'class' => 'form-horizontal',
+                                                'id' => 'submit_form',
+                                            ],
+                                        ]
+                                    ); ?>
+                                        <center>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <img id="image_upload_preview" src="<?=Yii::$app->request->BaseUrl.'/uploads/'.$model->foto ?>" alt="your image" height='300' width='300' />
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-offset-3 col-md-6">
+                                                        <label id="muat" class="custom-file-input file-blue">
+
+                                                        <!-- <input type="hidden" name="MaklumatKakitangan[file]" value="">
+                                                        <input type="file" id="uploadBtn" class="inputFile" name="MaklumatKakitangan[file]"> -->
+                                                            <?= $form->field($model, 'file')->fileInput(['class'=>"inputFile"])->label(false)?>
+                                                        </label>
+                                                        <a href="javascript:;" id="cancel" class="btn red" style="display:none;"> Buang </a>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3"></label>
+                                                    <div class="col-md-8">
+                                                        <?= Html::submitButton($model->isNewRecord ? 'Simpan <i class="fa fa-check"></i>' : 'Kemaskini', ['class' => $model->isNewRecord ? 'btn btn-success button-submit' : 'btn btn-primary']) ?>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                        </center>
+                                    <?php ActiveForm::end(); ?>
                                 </div>
                             </div>
                         </div>

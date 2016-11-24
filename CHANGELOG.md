@@ -1,3 +1,10 @@
+Update 25/11/2016
+=================
+- Add Update image process.
+- Reupdate function create at MaklumatKakitanganController
+- Add notify message when succeeded in a couple of process
+- Update function delete at MaklumatKakitanganController
+
 Update 23/11/2016
 =================
 - Improvement view and update form for kakitangan

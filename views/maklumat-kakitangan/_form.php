@@ -389,7 +389,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                                         <input type="file" id="uploadBtn" class="inputFile" name="MaklumatKakitangan[file]"> -->
                                                         <?= $form->field($model, 'file')->fileInput(['class'=>"inputFile"])->label(false)?>
                                                         </label>
-                                                        <!-- <?= $form->field($model, 'file')->fileInput(['class'=>"inputFile"])?> -->
                                                         <a href="javascript:;" id="cancel" class="btn red" style="display:none;"> Buang </a>
                                                     </div>
                                                     </div>

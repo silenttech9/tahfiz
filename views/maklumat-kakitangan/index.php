@@ -48,12 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
 
             </div>
-            <?php if(Yii::$app->session->hasFlash('maklumatstaff-success')):?>
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert"></button>
-                     <?php echo  Yii::$app->session->getFlash('maklumatstaff-success'); ?>
-                </div>
-            <?php endif; ?>
+            
             <div class="portlet-body">
                 <div class="maklumat-kakitangan-index">
                     
